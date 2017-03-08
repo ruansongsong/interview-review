@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <ul id="ul">
+    <li id="1">1</li>
+    <li id="2">2</li>
+    <li id="3">3</li>
+  </ul>
+</body>
+<script>
+  var ul = document.getElementById('ul');
+  ul.addEventListener('click', function(event) {
+    var target = event.target;
+    var detail = event.detail;
+    console.log(detail);
+    var name = target.nodeName;
+    console.log(target);
+    console.log(name);
+  })
+</script>
+</html>

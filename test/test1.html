@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<style>
+  textarea {
+    width: 200px;
+    height: 70px;
+    margin: 0;
+    padding: 0;
+  }
+</style>
+<body>
+  <textarea id="txt">22222222</textarea>
+</body>
+<script>
+  console.log('offsetHeight' + document.getElementById('txt').offsetHeight);
+  console.log('scrollHeight' + document.getElementById('txt').scrollHeight);
+  console.log('clientHeight' + document.getElementById('txt').clientHeight)
+</script>
+</html>
