@@ -1,4 +1,16 @@
-const test = require('./a');
-// const add = require('./a').add;
-console.log(test);
-// console.log(add(2, 3))
+function c() {
+    console.log('c');
+    console.trace();
+}
+
+function b() {
+    console.log('b');
+    c();
+}
+
+function a() {
+    console.log('a');
+    b();
+}
+
+a();

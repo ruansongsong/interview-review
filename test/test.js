@@ -239,19 +239,28 @@
 //     }
 // }
 // console.log(object.getName()())
-function foo() {
-    console.log(this.a);
-}
-var object = {
-    a: 2,
-    foo: foo
-}
-object.foo() // 2
+// function foo() {
+//     console.log(this.a);
+// }
+// var object = {
+//     a: 2,
+//     foo: foo
+// }
+// object.foo() // 2
 
-function foo1() {
-    console.log(this.a);
-}
-var object1 = {
-    a: 2
-}
-foo1.call(object1) // 2
+// function foo1() {
+//     console.log(this.a);
+// }
+// var object1 = {
+//     a: 2
+// }
+// foo1.call(object1) // 2
+// var array = [1, 1, 2, 2, 3];
+// var a = array.filter(function (item, index, self) {
+//     console.log(self.indexOf(item) + ":" + index);
+//     return self.indexOf(item) == index;
+
+    
+// })
+// console.log(a)
+console.log(Math.round(0.5))
