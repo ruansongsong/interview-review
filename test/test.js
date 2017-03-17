@@ -263,4 +263,6 @@
     
 // })
 // console.log(a)
-console.log(Math.round(0.5))
+// console.log(Math.round(0.5))
+
+console.log([...new Set([2, 2, 3, 4])]);
