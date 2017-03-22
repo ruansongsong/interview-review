@@ -41,8 +41,8 @@ node 的执行模型，正是它使回调函数十分普遍，事件循环是一
 ## 非IO的异步API
 - setTimeout(): 
 - setInterval(): 创建的定时器会被插入到定时器观察者内部的一个红黑树中,每次Tick,会从该红黑树中迭代取出定时器对象,检查是否超过规定时间,如果超过,则形成一个事件,发的回调函数就会被立即执行,定时可能不准确
-- setImmediate():回调函数会插入到下次事件循环的末尾,回调函数保存在`链表`中
-- process.nextTick():将回调函数放入队列中,在下一轮tick立即取出,时间复杂度O(1),而采用`setTimeout(function() {}, 0)`事件复杂度为O(logn),回调函数保存在`数组`中,
+- setImmediate():回调函数会插入到下次事件循环的末尾,回调函数保存在`链表`中,下一次tick只执行一个回调函数
+- process.nextTick():将回调函数放入队列中,在下一轮tick立即取出,时间复杂度O(1),而采用`setTimeout(function() {}, 0)`事件复杂度为O(logn),回调函数保存在`数组`中,所有回调函数会在下一次tick全部执行完.
 
 process.nextTick() 优先级比 setImmediate()高.
 
