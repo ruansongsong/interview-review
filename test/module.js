@@ -1,4 +1,4 @@
-const a = require('./a');
-module.exports.name = "233";
-exports.age = 21;
-console.log(module);
+function a() {
+  console.log(arguments.length);
+}
+a(1, 2);

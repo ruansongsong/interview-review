@@ -1,4 +1,10 @@
-
+(function() {
+    var x=foo();
+    var foo=function foo() {
+    return "foobar"
+};
+return x;
+})();
 // 定义一个空数组，存放我们所有的`中间件`
 const middlewares = [];
 

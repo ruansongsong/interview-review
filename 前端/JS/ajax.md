@@ -9,7 +9,7 @@
 ![alt](../images/ajax_1.png)
 
 在收到响应后，响应的数据会自动填充xhr对象的属性 
-- reponseText:响应主题被返回的文本 
+- responseText:响应主题被返回的文本 
 - reponseXML：如果响应的内容是text/xml或application/xml，这个属性将保存响应的xml dom文档。 
 - status:响应的HTTP状态码，200、304。。。 
 - statusText:HTTP状态的说明

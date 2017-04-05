@@ -18,6 +18,7 @@
  <input type="hidden" name="token" value="{{.}}">
  
 ```
+3. 检查`referer`http 请求头
 3. 为每个用户生成一个唯一的 `cookie token`，
 
 ## XSS
